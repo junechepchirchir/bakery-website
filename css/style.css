@@ -93,3 +93,18 @@ body.dark-mode .hero {
     padding: 8px 10px 0 10px;
     margin: 0;
 }
+
+/* ── CONTACT FORM ── */
+.btn-pink {
+    background-color: #f9a8c9;
+    color: #5a2d4a;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-pink:hover {
+    background-color: #f78db5;
+    color: #5a2d4a;
+}
