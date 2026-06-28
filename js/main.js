@@ -67,4 +67,15 @@ function validateOrder() {
     document.getElementById('orderAddressError').classList.add('d-none');
     document.getElementById('orderDateError').classList.add('d-none');
 
-    
+     if (name === '') { document.getElementById('orderNameError').classList.remove('d-none'); valid = false; }
+    if (email === '' || !email.includes('@')) { document.getElementById('orderEmailError').classList.remove('d-none'); valid = false; }
+    if (phone === '') { document.getElementById('orderPhoneError').classList.remove('d-none'); valid = false; }
+    if (item === '') { document.getElementById('orderItemError').classList.remove('d-none'); valid = false; }
+    if (qty === '' || qty < 1) { document.getElementById('orderQtyError').classList.remove('d-none'); valid = false; }
+    if (address === '') { document.getElementById('orderAddressError').classList.remove('d-none'); valid = false; }
+    if (date === '') { document.getElementById('orderDateError').classList.remove('d-none'); valid = false; }
+
+    if (valid) {
+        document.getElementById('orderSuccess').classList.remove('d-none');
+    }
+}
