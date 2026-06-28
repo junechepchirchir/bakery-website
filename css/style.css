@@ -20,18 +20,38 @@ body {
 }
 
 .hero {
-    background-color: #fce4ec;
+    background-image: url('../images/cake background.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 100px 20px;
+    position: relative;
 }
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 168, 201, 0.3);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #5a2d4a;
+    color: #ffffff;
 }
+
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 30px;
-    color: #7a3b5e;
+    color: #ffffff;
 }
 .card{
     border: none;
