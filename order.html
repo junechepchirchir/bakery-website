@@ -84,10 +84,35 @@
                     <div class="text-danger d-none" id="orderItemError">Please select an item to order.</div>
                 </div>
 
+                 <div class="mb-3">
+                    <label class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="orderQty" placeholder="e.g. 2" min="1">
+                    <div class="text-danger d-none" id="orderQtyError">Please enter a quantity.</div>
+                </div>
 
-             
-           
+                 <div class="mb-3">
+                    <label class="form-label">Delivery Address</label>
+                    <input type="text" class="form-control" id="orderAddress" placeholder="e.g. Westlands, Nairobi">
+                    <div class="text-danger d-none" id="orderAddressError">Please enter your delivery address.</div>
+                </div>
+
+                 <div class="mb-3">
+                    <label class="form-label">Delivery Date</label>
+                    <input type="date" class="form-control" id="orderDate">
+                    <div class="text-danger d-none" id="orderDateError">Please select a delivery date.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Special Instructions (optional)</label>
+                    <textarea class="form-control" id="orderNotes" rows="3" placeholder="Any special requests or customizations..."></textarea>
+                </div>
+
+                <button class="btn btn-pink" onclick="validateOrder()">Place Order</button>
+
+             </div> 
         </div>
+    </section>
+    g
 
 </body>
 </html>
