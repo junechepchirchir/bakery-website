@@ -40,5 +40,54 @@
         </div>
     </section>
 
+    <!-- ORDER FORM -->
+    <section class="order-form py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                 <div id="orderSuccess" class="alert alert-success d-none">
+                    Your order has been received! We will contact you shortly to confirm. Thank you for choosing Chichi's!
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="orderName" placeholder="Your full name">
+                    <div class="text-danger d-none" id="orderNameError">Please enter your name.</div>
+                </div>
+
+                 <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="orderEmail" placeholder="your@email.com">
+                    <div class="text-danger d-none" id="orderEmailError">Please enter a valid email.</div>
+                </div>
+
+                 <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="orderPhone" placeholder="+254 700 000 000">
+                    <div class="text-danger d-none" id="orderPhoneError">Please enter your phone number.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">What would you like to order?</label>
+                    <select class="form-control" id="orderItem">
+                         <option value="">-- Select a product --</option>
+                        <option>Chocolate Chip Cookies (KSh 150 / 6 pcs)</option>
+                        <option>Peanut Butter Cookies (KSh 150 / 6 pcs)</option>
+                        <option>Vanilla Sugar Cookies (KSh 120 / 6 pcs)</option>
+                        <option>Strawberry Cream Cake (KSh 2,500)</option>
+                        <option>Chocolate Fudge Cake (KSh 2,800)</option>
+                        <option>Custom Birthday Cake (From KSh 3,500)</option>
+                        <option>Classic Cream Puff (KSh 80 / pc)</option>
+                        <option>Chocolate Eclair (KSh 100 / pc)</option>
+                        <option>Cinnamon Roll (KSh 120 / pc)</option>
+                    </select>
+                    <div class="text-danger d-none" id="orderItemError">Please select an item to order.</div>
+                </div>
+
+
+             
+           
+        </div>
+
 </body>
 </html>
