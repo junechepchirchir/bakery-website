@@ -45,3 +45,26 @@ function validateForm() {
         document.getElementById('successMessage').classList.remove('d-none');
     }
 }
+
+// ── ORDER FORM VALIDATION ──
+function validateOrder() {
+    let valid = true;
+
+    const name = document.getElementById('orderName').value.trim();
+    const email = document.getElementById('orderEmail').value.trim();
+    const phone = document.getElementById('orderPhone').value.trim();
+    const item = document.getElementById('orderItem').value;
+    const qty = document.getElementById('orderQty').value;
+    const address = document.getElementById('orderAddress').value.trim();
+    const date = document.getElementById('orderDate').value;
+
+    //Hide all errors first
+    document.getElementById('orderNameError').classList.add('d-none');
+    document.getElementById('orderEmailError').classList.add('d-none');
+    document.getElementById('orderPhoneError').classList.add('d-none');
+    document.getElementById('orderItemError').classList.add('d-none');
+    document.getElementById('orderQtyError').classList.add('d-none');
+    document.getElementById('orderAddressError').classList.add('d-none');
+    document.getElementById('orderDateError').classList.add('d-none');
+
+    
