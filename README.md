@@ -13,3 +13,24 @@ Chichi's Cream and Cookies is a responsive bakery website built using HTML, CSS,
 - Image gallery
 - Blog section
 
+Tecnologies used are HTML 5, Css and JavaScript
+
+## Project Structure
+
+├── index.html
+├── about.html
+├── menu.html
+├── gallery.html
+├── blog.html
+├── contact.html
+├── order.html
+├── css/
+├── js/
+├── images/
+└── README.md
+
+## Author
+
+Created by **June Chepchirchir**
+
+This project is for educational and portfolio purposes.
